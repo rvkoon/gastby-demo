@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
   response.data.allContentfulProject.edges.forEach((edge) => {
     createPage({
       path: edge.node.slug,
-      component: path.resolve(`./src/templates/ProjectTPL.jsx`),
+      component: path.resolve(`./src/templates/ProjectTPL/ProjectTPL.jsx`),
       context: {
         slug: edge.node.slug,
       },

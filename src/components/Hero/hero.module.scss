@@ -1,0 +1,36 @@
+.heroContainer {
+  width: 100%;
+  height: 400px;
+  background-color: #7451eb;
+
+  .heroInside {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .heroInfos {
+      height: 100%;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h2 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+
+      p {
+      }
+    }
+
+    .heroImage {
+      object-fit: contain;
+      max-width: 100%;
+      min-height: 100%;
+    }
+  }
+}
